@@ -1,8 +1,6 @@
-describe("Testing #2", () => {
+describe("Test #2", () => {
 it ('Авторизация', () => {
-	cy.visit('https://finance.dev.fabrique.studio/accounts/login/');
-	cy.get('input[type="email"]').type('admin@admin.ad');
-	cy.get('input[type="password"]').type('admin');
+	cy.visit('https://finance.dev.fabrique.studio/accounts/login/?User ID=fabrique&Password=fabrique');
 	cy.get('button[type="submit"]').click();
  });
  
