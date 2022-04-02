@@ -4,6 +4,12 @@ it ('Авторизация', () => {
 	cy.get('button[type="submit"]').click();
  });
  
+ it ('Авторизация 2', () => {
+ 	cy.get('input[type="email"]').type('admin@admin.ad');
+ 	cy.get('input[type="password"]').type('admin');
+	cy.get('button[type="submit"]').click();
+ });
+
 it ('Результат Поиск', () => {
 		cy.get('input[placeholder="Поиск"]').type('тест');
 		cy.get('input[placeholder="Поиск"]').type('{enter}');
